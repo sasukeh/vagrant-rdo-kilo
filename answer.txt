@@ -56,7 +56,7 @@ CONFIG_TROVE_INSTALL=n
 
 # Set to 'y' if you would like Packstack to install OpenStack Bare
 # Metal (Ironic)
-CONFIG_IRONIC_INSTALL=y
+CONFIG_IRONIC_INSTALL=n
 
 # Set to 'y' if you would like Packstack to install the OpenStack
 # Client packages. An admin "rc" file will also be installed
@@ -82,15 +82,15 @@ CONFIG_DEBUG_MODE=n
 
 # The IP address of the server on which to install OpenStack services
 # specific to controller role such as API servers, Horizon, etc.
-CONFIG_CONTROLLER_HOST=192.168.10.20
+CONFIG_CONTROLLER_HOST=192.168.10.16
 
 # The list of IP addresses of the server on which to install the Nova
 # compute service
-CONFIG_COMPUTE_HOSTS=192.168.10.20
+CONFIG_COMPUTE_HOSTS=192.168.10.16
 
 # The list of IP addresses of the server on which to install the
 # network service such as Nova network or Neutron
-CONFIG_NETWORK_HOSTS=192.168.10.20
+CONFIG_NETWORK_HOSTS=192.168.10.16
 
 # Set to 'y' if you want to use VMware vCenter as hypervisor and
 # storage. Otherwise set to 'n'.
@@ -116,11 +116,11 @@ CONFIG_VCENTER_CLUSTER_NAME=
 # (Unsupported!) The IP address of the server on which to install
 # OpenStack services specific to storage servers such as Glance and
 # Cinder.
-CONFIG_STORAGE_HOST=192.168.10.20
+CONFIG_STORAGE_HOST=192.168.10.16
 
 # (Unsupported!) The IP address of the server on which to install
 # OpenStack services specific to Sahara
-CONFIG_SAHARA_HOST=192.168.10.20
+CONFIG_SAHARA_HOST=192.168.10.16
 
 # To subscribe each server to EPEL enter "y"
 CONFIG_USE_EPEL=n
@@ -192,7 +192,7 @@ CONFIG_SATELLITE_PROXY_PW=
 CONFIG_AMQP_BACKEND=rabbitmq
 
 # The IP address of the server on which to install the AMQP service
-CONFIG_AMQP_HOST=192.168.10.20
+CONFIG_AMQP_HOST=192.168.10.16
 
 # Enable SSL for the AMQP service
 CONFIG_AMQP_ENABLE_SSL=n
@@ -229,7 +229,7 @@ CONFIG_AMQP_AUTH_PASSWORD=PW_PLACEHOLDER
 
 # The IP address of the server on which to install MariaDB or IP
 # address of DB server to use if MariaDB installation was not selected
-CONFIG_MARIADB_HOST=192.168.10.20
+CONFIG_MARIADB_HOST=192.168.10.16
 
 # Username for the MariaDB admin user
 CONFIG_MARIADB_USER=root
@@ -265,7 +265,7 @@ CONFIG_KEYSTONE_SERVICE_NAME=httpd
 CONFIG_KEYSTONE_IDENTITY_BACKEND=sql
 
 # Keystone LDAP backend URL
-CONFIG_KEYSTONE_LDAP_URL=ldap://192.168.10.20
+CONFIG_KEYSTONE_LDAP_URL=ldap://192.168.10.16
 
 # Keystone LDAP backend user DN.  Used to bind to the LDAP server
 # when the LDAP server does not allow anonymous authentication.
@@ -828,11 +828,11 @@ CONFIG_CEILOMETER_KS_PW=54a9e5fd611545df
 CONFIG_CEILOMETER_COORDINATION_BACKEND=redis
 
 # The IP address of the server on which to install MongoDB
-CONFIG_MONGODB_HOST=192.168.10.20
+CONFIG_MONGODB_HOST=192.168.10.16
 
 # The IP address of the server on which to install redis master
 # server
-CONFIG_REDIS_MASTER_HOST=192.168.10.20
+CONFIG_REDIS_MASTER_HOST=192.168.10.16
 
 # The port on which the redis server(s) listens
 CONFIG_REDIS_PORT=6379
